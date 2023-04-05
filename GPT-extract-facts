@@ -40,7 +40,7 @@ javascript:(function() {
       throw new Error('Article element not found');
     }
     const text = extractText(articleElement);
-    const preamble = '[1] - Extract all the factual and numerical details from the original article, and enumerate them as a numbered list.\n[2] - Then, ask me which of these facts I would like to include in the summary, and how long the summarry should be. \n[2] -  \n\n';
+    const preamble = '[1] - Extract all the factual and numerical details from the original article, and enumerate them as a numbered list.\n[2] - Then, ask me which of these facts I would like to include in the summary, and how long the summarry should be. \n\n';
     const clipboardText = preamble + text;
     copyToClipboard(clipboardText);
     alert('The article and a prompt have been copied to your clipboard. Please paste into ChatGPT to get the key facts.');
